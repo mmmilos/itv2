@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPTV Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hauptscreen -->
+<div id="main" class="screen active">
+  <div id="top">
+    <button class="tab" id="tab-live" data-nav data-tab="live">Live TV</button>
+    <button class="tab" id="tab-vod" data-nav data-tab="vod">Filme</button>
+    <button id="btn-pl" data-nav>Playlists</button>
+    <div id="title">Kategorie wählen</div>
+    <span id="pl-name"></span>
+    <input id="search" data-nav type="text" placeholder="Suchen …">
+  </div>
+  <div id="body">
+    <div id="cats" class="vl"></div>
+    <div id="grid" class="vl"></div>
+  </div>
+</div>
+
+<!-- Playlist-Verwaltung -->
+<div id="pls" class="screen page">
+  <h1>Playlists</h1>
+  <div id="pl-list"></div>
+  <div class="row">
+    <button id="add-x" data-nav>Xtream hinzufügen</button>
+    <button id="add-m" data-nav>M3U-URL hinzufügen</button>
+    <button id="pl-back" data-nav>Zurück</button>
+  </div>
+</div>
+
+<!-- Playlist bearbeiten -->
+<div id="edit" class="screen page">
+  <h1 id="edit-title">Playlist</h1>
+  <label>Name</label>
+  <input id="f-name" data-nav type="text">
+  <label id="l-server">Server-URL</label>
+  <input id="f-server" data-nav type="text" placeholder="http://server:port">
+  <div class="xt">
+    <label>Benutzername</label>
+    <input id="f-user" data-nav type="text">
+    <label>Passwort</label>
+    <input id="f-pass" data-nav type="text">
+  </div>
+  <div class="row">
+    <button id="f-save" data-nav>Speichern</button>
+    <button id="f-cancel" data-nav>Abbrechen</button>
+    <button id="f-del" data-nav>Löschen</button>
+  </div>
+</div>
+
+<!-- Player -->
+<div id="player" class="screen">
+  <video id="vid" autoplay></video>
+  <div id="osd"></div>
+</div>
+
+<div id="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

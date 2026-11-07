@@ -1,0 +1,20 @@
+{
+  "name": "tizen-iptv-player",
+  "version": "2.0.0",
+  "description": "IPTV Player (Xtream Codes / M3U) für TizenBrew",
+  "packageType": "app",
+  "appName": "IPTV Player",
+  "appPath": "index.html",
+  "keys": [
+    "ColorF0Red",
+    "ColorF1Green",
+    "ColorF2Yellow",
+    "ColorF3Blue",
+    "MediaPlay",
+    "MediaPause",
+    "MediaPlayPause",
+    "MediaStop",
+    "MediaRewind",
+    "MediaFastForward"
+  ]
+}
